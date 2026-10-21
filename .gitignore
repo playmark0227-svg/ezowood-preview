@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+test-results/
+screenshots/
+assets/image-production.json
+*.docx
+*.pdf
+.env*
