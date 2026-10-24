@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{HTML_LANG}}" data-locale="{{LOCALE}}" data-static-page="{{PAGE_PATH}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex" data-template-only>
+  <meta name="theme-color" content="#30382f">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+{{SEO_HEAD}}
+{{STYLES}}
+</head>
+<body class="{{BODY_CLASS}}">
+  <a class="skip-link" href="#main">{{SKIP_LABEL}}</a>
+  <header id="site-header">{{HEADER}}</header>
+  <main id="main" tabindex="-1">{{BREADCRUMBS}}{{MAIN}}</main>
+  <footer id="site-footer">{{FOOTER}}</footer>
+  <dialog id="menu-dialog" class="menu-dialog">{{MENU}}</dialog>
+  <dialog id="image-dialog" class="image-dialog"></dialog>
+  <dialog id="notify-dialog" class="notify-dialog"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="container small-copy">{{NOSCRIPT_LABEL}}</p></noscript>
+{{SCRIPTS}}
+</body>
+</html>
