@@ -54,21 +54,23 @@ body{background:var(--paper);color:var(--ink)}
 .hm-checks li{display:flex;gap:14px;align-items:baseline;font:15px/1.7 var(--sans);color:var(--ink)}
 .hm-checks li:before{content:'';flex:none;width:12px;height:6px;border-left:2px solid var(--amber);border-bottom:2px solid var(--amber);transform:rotate(-45deg) translateY(-4px)}
 
-/* ---------- Hero: the pen first, price and action within reach ---------- */
+/* ---------- Hero: a full-bleed film of forest, workshop and pen; copy, price and action on the left ---------- */
 .hm-hero{position:relative;display:grid;grid-template-columns:minmax(0,40fr) minmax(0,60fr);grid-template-rows:1fr auto auto 1fr;column-gap:clamp(24px,3vw,56px);min-height:clamp(640px,88svh,880px);padding:104px 0 40px var(--gutter);background:var(--slate);color:#f6f1e8;overflow:hidden;isolation:isolate}
-.hm-hero:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 70% 60% at 72% 50%,#2c2a29 0%,var(--slate) 70%)}
-.hm-hero-media{grid-column:2;grid-row:1/5;align-self:center;position:relative;aspect-ratio:3/2;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 6%,#000 97%,transparent 100%),linear-gradient(180deg,transparent 0,#000 8%,#000 92%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 6%,#000 97%,transparent 100%),linear-gradient(180deg,transparent 0,#000 8%,#000 92%,transparent 100%);mask-composite:intersect}
-.hm-hero-img{width:100%;height:100%;object-fit:cover}
-.hm-hero-media .shot-chip{left:7%;bottom:9%}
+.hm-hero-media{position:absolute;inset:0;z-index:-1;background:var(--slate)}
+.hm-hero-video{display:block;width:100%;height:100%;object-fit:cover}
+/* The left scrim keeps the copy readable over bright shots; the top band does the same for the header. */
+.hm-hero-media:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(14,15,14,.88) 0%,rgba(14,15,14,.74) 38%,rgba(14,15,14,.3) 62%,rgba(14,15,14,.06) 100%),linear-gradient(180deg,rgba(14,15,14,.6) 0%,rgba(14,15,14,0) 24%,rgba(14,15,14,0) 76%,rgba(14,15,14,.4) 100%)}
+.hm-hero-media .shot-chip{left:auto;right:76px;bottom:23px}
+.hm-hero-media .hm-film-toggle{right:20px;bottom:14px}
 .hm-hero-copy{grid-column:1;grid-row:2;padding-bottom:28px}
 .hm-hero-copy .hm-kicker{color:var(--honey)}
-.hm-hero-title{font-family:var(--serif);font-weight:500;font-size:clamp(32px,3.3vw,54px);line-height:1.55;letter-spacing:.08em;margin:0 0 24px;color:#fff}
-.hm-hero-lead{font-size:clamp(14px,1.1vw,17px);line-height:2.05;letter-spacing:.05em;color:#e4ddd1}
-.hm-hero-buy{grid-column:1;grid-row:3;display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;padding-top:28px;border-top:1px solid rgba(255,255,255,.14);max-width:460px}
+.hm-hero-title{font-family:var(--serif);font-weight:500;font-size:clamp(32px,3.3vw,54px);line-height:1.55;letter-spacing:.08em;margin:0 0 24px;color:#fff;text-shadow:0 1px 20px rgba(0,0,0,.45)}
+.hm-hero-lead{font-size:clamp(14px,1.1vw,17px);line-height:2.05;letter-spacing:.05em;color:#ece6da;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hm-hero-buy{grid-column:1;grid-row:3;display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;padding-top:28px;border-top:1px solid rgba(255,255,255,.22);max-width:460px}
 .hm-hero .price-label{color:#e6d6bd;border-color:rgba(230,214,189,.55)}
 .hm-hero .price-block .price{color:#fff;font-size:30px}
 .hm-hero .price-tax{color:#cfc7ba}
-.hm-hero .status-pill{background:transparent;color:#f1eadf;border-color:rgba(255,255,255,.28)}
+.hm-hero .status-pill{background:rgba(14,15,14,.45);color:#f1eadf;border-color:rgba(255,255,255,.3)}
 .hm-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;width:100%;margin-top:6px}
 .hm-hero .button-primary{background:var(--honey);border-color:var(--honey);color:var(--ink);min-width:min(100%,300px)}
 .hm-hero .button-primary:hover{background:var(--honey-2);border-color:var(--honey-2)}
@@ -112,8 +114,8 @@ body{background:var(--paper);color:var(--ink)}
 .hm-story .hm-kicker{color:var(--honey)}
 .hm-story .hm-title{color:#fff;margin-bottom:0}
 .hm-story-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center;margin-top:44px}
-.hm-film{position:relative;margin:0;aspect-ratio:16/9;background:#0e0f0e;overflow:hidden}
-.hm-film video{width:100%;height:100%;object-fit:cover}
+.hm-story-media{aspect-ratio:3/2;background:#0e0f0e}
+.hm-story-media img{object-fit:cover}
 .hm-film-toggle{position:absolute;right:14px;bottom:14px;z-index:2;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(10,10,10,.55);border:1px solid rgba(255,255,255,.45);color:#fff}
 .hm-film-toggle span{width:0;height:0;border-style:solid;border-width:7px 0 7px 12px;border-color:transparent transparent transparent currentColor;margin-left:3px}
 .hm-film-toggle[aria-pressed=true] span{width:12px;height:14px;border:0;border-left:4px solid currentColor;border-right:4px solid currentColor;margin:0}
@@ -225,8 +227,10 @@ html[lang=en] .hm-body,html[lang=en] .hm-hero-lead{letter-spacing:0;line-height:
   .hm-hero{display:flex;flex-direction:column;min-height:0;max-height:none;padding:108px 0 28px}
   .hm-hero-copy{order:1;padding:4px 22px 0}
   .hm-hero-copy .hm-kicker{font-size:10px;letter-spacing:.14em;margin-bottom:12px}
-  .hm-hero-media{order:2;width:100%;margin:-6px 0 -18px;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 10%,#000 90%,transparent 100%);-webkit-mask-composite:source-over;mask-image:linear-gradient(180deg,transparent 0,#000 10%,#000 90%,transparent 100%);mask-composite:add}
-  .hm-hero-media .shot-chip{left:auto;right:16px;bottom:14%}
+  .hm-hero-media{order:2;position:relative;inset:auto;z-index:0;width:100%;aspect-ratio:16/9;margin:14px 0 2px}
+  .hm-hero-media:after{background:linear-gradient(180deg,var(--slate) 0%,rgba(24,25,25,0) 10%,rgba(24,25,25,0) 90%,var(--slate) 100%)}
+  .hm-hero-media .shot-chip{right:60px;bottom:16px}
+  .hm-hero-media .hm-film-toggle{right:12px;bottom:9px;width:40px;height:40px}
   .hm-hero-buy{order:3;position:relative;max-width:none;margin:0 22px;padding-top:18px;gap:14px 12px}
   .hm-hero-title{font-size:clamp(28px,7.4vw,40px);margin-bottom:14px}
   .hm-hero-lead{font-size:14px;line-height:1.9}

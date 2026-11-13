@@ -29,6 +29,10 @@ English and Traditional Chinese pages are available. Overseas shipping, taxes, p
 
 Craftsperson support and forest conservation are future concepts. No partner identity, donation recipient, contribution amount, certification or impact is asserted.
 
+## Hero film
+
+The home page opens with a 20.5-second looping film (`assets/hero-film-720.mp4` for desktop, `assets/hero-film-480.mp4` for phones, `assets/hero-poster.webp` as the first frame). It is edited from six AI-generated concept clips and the existing forest film, and is labelled as a concept film on the page. Run `python3 scripts/build-hero-film.py` to re-edit it; the source clips are kept locally in `production/hero-film/clips/`, which is not published. The film pauses off screen and stays on its poster for visitors who prefer reduced motion or reduced data.
+
 ## Publication
 
 GitHub Pages serves the main branch at its root. See `docs/seo-launch.md` for search settings and migration to a future custom domain. Keep source answer documents, private records, credentials and QA files outside this public repository.

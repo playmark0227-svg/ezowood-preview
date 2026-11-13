@@ -1,7 +1,6 @@
 /* Images are labelled by status: 'reference' shows an illustrative-image label; set 'real' only after approved photography.
    `variants` lists WebP widths generated next to the JPEG (e.g. pen-768.webp, pen-1536.webp). */
 window.EZO_MEDIA = {
-  hero: {file:'pen.jpg',status:'reference',category:'product',variants:[768,1536]},
   burl: {file:'burl.jpg',status:'reference',category:'material',variants:[768,1536]},
   forest: {file:'forest.jpg',status:'reference',category:'landscape',variants:[768,1536]},
   pen: {file:'pen.jpg',status:'reference',category:'product',variants:[768,1536]},

@@ -6,3 +6,4 @@ assets/image-production.json
 *.docx
 *.pdf
 .env*
+production/

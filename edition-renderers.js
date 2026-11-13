@@ -28,8 +28,9 @@ window.EZO_RENDERERS = function ({t,u,editorial,esc,routeLink,image,eyebrow,arro
   const checks=items=>`<ul class="hm-checks">${items.map(item=>`<li>${esc(item)}</li>`).join('')}</ul>`;
   function home() {
     const journalPicks=[0,2,3];
+    /* The hero film opens on the pen (also its poster), then cuts through forest and workshop shots. The small source serves phones. */
     return `<section class="hm-hero" data-hero aria-labelledby="hero-title">
-      <div class="hm-hero-media">${image('hero',t('productName'),'hm-hero-img','','100vw')}<span class="shot-chip">${esc(u('hImageChip'))}</span></div>
+      <div class="hm-hero-media" data-film-frame><video class="hm-hero-video" data-film="hero" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.webp" width="1280" height="720" aria-label="${esc(u('filmLabel'))}"><source src="assets/hero-film-480.mp4" type="video/mp4" media="(max-width: 900px)"><source src="assets/hero-film-720.mp4" type="video/mp4"></video><span class="shot-chip">${esc(u('hFilmChip'))}</span><button class="hm-film-toggle" type="button" data-film-toggle aria-label="${esc(u('filmAction'))}" aria-pressed="true"><span aria-hidden="true"></span></button></div>
       <div class="hm-hero-copy">${kicker(u('hEyebrow'))}<h1 id="hero-title" class="hm-hero-title preline">${esc(u('hTitle'))}</h1><p class="hm-hero-lead preline">${esc(u('hLead'))}</p></div>
       <div class="hm-hero-buy">${priceBlock('hm-price')}${statusPill()}<div class="hm-actions">${routeLink('product',u('hPrimary'),'button button-primary')}<a class="hm-secondary" href="#grain">${esc(u('hSecondary'))}</a></div></div>
     </section>
@@ -45,7 +46,7 @@ window.EZO_RENDERERS = function ({t,u,editorial,esc,routeLink,image,eyebrow,arro
     <section class="hm-story"><div class="container">
       <div class="hm-story-head">${kicker(u('hStoryEyebrow'))}${title(u('hStoryTitle'))}</div>
       <div class="hm-story-layout">
-        <figure class="hm-film"><video data-film muted loop playsinline preload="none" poster="assets/atelier-poster.webp" aria-label="${esc(u('filmLabel'))}"><source src="assets/atelier-film-960.mp4" type="video/mp4"></video><figcaption class="shot-chip">${esc(u('hFilmChip'))}</figcaption><button class="hm-film-toggle" type="button" data-film-toggle aria-label="${esc(u('filmAction'))}" aria-pressed="false"><span aria-hidden="true"></span></button></figure>
+        ${shot('tools',u('hStoryTitle'),'hm-story-media','(max-width:900px) 100vw, 58vw')}
         <ol class="hm-steps">${u('hStorySteps').map(([name,text],i)=>`<li><div class="hm-step-thumb">${image(['forest','burl','craft'][i],name,'','','120px')}</div><div><span class="hm-no">0${i+1}</span><h3>${esc(name)}</h3><p>${esc(text)}</p></div></li>`).join('')}</ol>
       </div>
       <div class="hm-story-foot">${routeLink('craft',u('craftLink'))}<p class="hm-note">${esc(u('craftNote'))}</p></div>

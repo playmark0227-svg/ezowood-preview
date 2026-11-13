@@ -99,6 +99,7 @@ function metadata(page, data, crumbs, renderedMain) {
     graph.push(article);
   }
   const result = [
+    ...(!page.pathname && !page.article ? [`  <link rel="preload" as="image" href="${esc(routes.asset('assets/hero-poster.webp'))}" fetchpriority="high">`] : []),
     `  <meta name="robots" content="${page.indexable ? 'index,follow,max-image-preview:large' : 'noindex,follow'}">`,
     `  <link rel="canonical" href="${esc(pageURL)}">`
   ];
@@ -116,7 +117,10 @@ function compile(values) {
     return values[key];
   });
 }
-const styles = [`  <link rel="icon" href="${esc(routes.asset('assets/favicon.svg'))}" type="image/svg+xml">`, `  <link rel="preload" href="${esc(versioned('assets/serif-jp.woff2'))}" as="font" type="font/woff2" crossorigin>`, ...styleFiles.map(file => `  <link rel="stylesheet" href="${esc(versioned(file))}">`)].join('\n');
+// Preload the font with exactly the URL styles.css requests, so the two can never drift apart and download it twice.
+const fontFile = (/url\('(assets\/serif-jp\.woff2[^']*)'\)/.exec(fs.readFileSync(path.join(ROOT, 'styles.css'), 'utf8')) || [])[1];
+if (!fontFile) throw new Error('styles.css must reference assets/serif-jp.woff2.');
+const styles = [`  <link rel="icon" href="${esc(routes.asset('assets/favicon.svg'))}" type="image/svg+xml">`, `  <link rel="preload" href="${esc(local(fontFile))}" as="font" type="font/woff2" crossorigin>`, ...styleFiles.map(file => `  <link rel="stylesheet" href="${esc(versioned(file))}">`)].join('\n');
 const scripts = scriptFiles.map(file => `  <script src="${esc(versioned(file))}" defer></script>`).join('\n');
 const generated = [];
 const seen = new Set();

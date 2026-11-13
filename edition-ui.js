@@ -222,7 +222,6 @@ window.EZO_UI = {
     "hStatus": "次回受付 準備中",
     "hPrimary": "このペンを詳しく見る",
     "hSecondary": "木目の魅力を知る",
-    "hImageChip": "完成イメージ",
     "hFacts": [
       [
         "北海道産の白樺瘤",
@@ -505,7 +504,6 @@ window.EZO_UI = {
     "hStatus": "Next release in preparation",
     "hPrimary": "See the pen in detail",
     "hSecondary": "Discover the grain",
-    "hImageChip": "Concept image",
     "hFacts": [
       [
         "Hokkaido birch burl",
@@ -788,7 +786,6 @@ window.EZO_UI = {
     "hStatus": "下次受理 準備中",
     "hPrimary": "查看這支筆的詳情",
     "hSecondary": "認識木紋之美",
-    "hImageChip": "完成示意圖",
     "hFacts": [
       [
         "北海道產白樺瘤",
