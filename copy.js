@@ -25,7 +25,7 @@ window.EZO_COPY = {
     "productEnglish": "SHIRAKABA BURL PEN",
     "productLead": "ひとつとして同じではない、瘤の表情。\n書くたびに、木に触れる一本。",
     "pricePending": "販売価格は準備中",
-    "priceNote": "税込・箱・送料込みを予定。最終条件は販売開始前にご案内します。",
+    "priceNote": "税込・箱・送料込みを予定しています。正式な価格は受付開始時にご案内します。",
     "madeToOrder": "受注予約販売（準備中）",
     "leadTime": "発送月・制作期間は各受付枠でご案内",
     "limitedRun": "発送枠を区切った受注予約制",
@@ -57,9 +57,9 @@ window.EZO_COPY = {
     "storyGiftBody": "自分のために選ぶ一本も、大切な誰かへ贈る一本も。北海道を知る、小さなきっかけになれたら。\n\n箱付きでのお届けを予定しています。包装や贈り先への直送などの詳細は、販売開始前にご案内します。",
     "storyCta": "最初の一本へ",
     "productEyebrow": "THE FIRST PEN",
-    "productStory": "北海道産の白樺瘤を使うノック式ボールペンを準備しています。制作は協力工房とのものづくりとして紹介し、ブランドは素材や商品の企画、背景の伝達を担います。現在は予約を受け付けていません。",
+    "productStory": "北海道産の白樺瘤を木軸にした、ノック式ボールペン。瘤が描く複雑な木目は一本ずつ異なり、同じものはふたつとありません。制作は協力工房とともに進めています。",
     "grainNotice": "自然素材のため、木目・色合い・瘤の表情には個体差があります。",
-    "photoNotice": "実物写真は撮影準備中です。掲載図・参考イメージは完成品の仕様を示すものではありません。",
+    "photoNotice": "掲載画像はイメージです。実際の商品は、木目・色合い・瘤の表情が一本ずつ異なります。",
     "quantity": "数量",
     "addCart": "カートに入れる",
     "viewCart": "カートを見る",
@@ -126,7 +126,10 @@ window.EZO_COPY = {
     "toastRemoved": "カートから取り除きました。",
     "toastLimit": "このプレビューで選べる数量の上限です。",
     "unit": "本",
-    "privacyNote": "現在、予約・決済・通知登録の受付は行っていません。"
+    "privacyNote": "現在、予約・決済・通知登録の受付は行っていません。",
+    "priceFormat": "{amount}円前後",
+    "priceLabel": "価格目安",
+    "taxIncluded": "（税込）"
   },
   "en": {
     "navStory": "Our story",
@@ -154,7 +157,7 @@ window.EZO_COPY = {
     "productEnglish": "SHIRAKABA BURL PEN",
     "productLead": "A different expression in every piece of burl.\nA moment with wood, each time you write.",
     "pricePending": "Price to be announced",
-    "priceNote": "Tax, a box and shipping are intended to be included. Final terms will be announced before sales begin.",
+    "priceNote": "Tax, a box and delivery are intended to be included. The final price will be announced when reservations open.",
     "madeToOrder": "Made-to-order reservations in preparation",
     "leadTime": "Timing will be announced for each release",
     "limitedRun": "Scheduled made-to-order releases",
@@ -186,9 +189,9 @@ window.EZO_COPY = {
     "storyGiftBody": "A pen chosen for yourself, or for someone who matters. We hope either can become a small introduction to Hokkaido.\n\nA box is planned to be included. Details of gift wrapping and delivery directly to a recipient will be announced before sales begin.",
     "storyCta": "Discover the first pen",
     "productEyebrow": "THE FIRST PEN",
-    "productStory": "We are preparing a retractable ballpoint using Hokkaido birch burl. Production will be presented as collaboration with partner workshops, while the brand plans the materials, product, and communication of its story. Reservations are currently closed.",
+    "productStory": "A retractable ballpoint pen with a barrel of Hokkaido birch burl. The intricate grain drawn by the burl differs in every pen, so no two are alike. It is made together with partner workshops.",
     "grainNotice": "As a natural material, every piece has its own grain, colour and burl pattern.",
-    "photoNotice": "Actual photography is in preparation. Illustrations and reference images do not confirm final product specifications.",
+    "photoNotice": "Images are illustrative. Each actual pen differs in grain, colour and burl figure.",
     "quantity": "Quantity",
     "addCart": "Add to cart",
     "viewCart": "View cart",
@@ -255,7 +258,10 @@ window.EZO_COPY = {
     "toastRemoved": "Removed from your cart.",
     "toastLimit": "You have reached the quantity limit for this preview.",
     "unit": "pcs",
-    "privacyNote": "Reservations, payments, and notification registrations are not currently accepted."
+    "privacyNote": "Reservations, payments, and notification registrations are not currently accepted.",
+    "priceFormat": "Around ¥{amount}",
+    "priceLabel": "Estimated price",
+    "taxIncluded": "(tax incl.)"
   },
   "zh": {
     "navStory": "我們的故事",
@@ -283,7 +289,7 @@ window.EZO_COPY = {
     "productEnglish": "SHIRAKABA BURL PEN",
     "productLead": "瘤木的紋理，沒有兩支相同。\n每一次書寫，都是與木的相遇。",
     "pricePending": "售價待公佈",
-    "priceNote": "計畫包含稅費、筆盒與運費，最終條件將在開售前公佈。",
+    "priceNote": "預計包含稅費、筆盒與運費。正式價格將於開放受理時公佈。",
     "madeToOrder": "接單預約販售籌備中",
     "leadTime": "各批次另行公佈製作與出貨時間",
     "limitedRun": "依出貨月份分批接單預約",
@@ -315,9 +321,9 @@ window.EZO_COPY = {
     "storyGiftBody": "為自己挑選的一支，或贈給重要之人的一支。希望它們都能成為了解北海道的一個小小契機。\n\n目前計畫隨筆附上筆盒。禮品包裝與直接寄送給收禮人等詳情，將在開售前公佈。",
     "storyCta": "認識第一支筆",
     "productEyebrow": "THE FIRST PEN",
-    "productStory": "我們正在籌備採用北海道白樺瘤木的按壓式原子筆。製作將以與合作工房協作的方式介紹，品牌負責材料與商品企劃，以及背景資訊的傳達。目前不受理預約。",
+    "productStory": "以北海道產白樺瘤為筆桿的按壓式原子筆。瘤所描繪的複雜木紋每支各異，沒有兩支相同。由合作工房一同製作。",
     "grainNotice": "天然材料的木紋、色澤與樹瘤形態，每一支都有差異。",
-    "photoNotice": "實物照片籌備拍攝中，示意圖及參考意象不代表完成品的確定規格。",
+    "photoNotice": "圖片皆為示意。實際商品的木紋、色澤與瘤的樣貌，每一支都不同。",
     "quantity": "數量",
     "addCart": "加入購物車",
     "viewCart": "檢視購物車",
@@ -384,6 +390,9 @@ window.EZO_COPY = {
     "toastRemoved": "已從購物車移除。",
     "toastLimit": "已達到本預覽可選擇的數量上限。",
     "unit": "支",
-    "privacyNote": "目前不受理預約、付款或通知登記。"
+    "privacyNote": "目前不受理預約、付款或通知登記。",
+    "priceFormat": "約 {amount} 日圓",
+    "priceLabel": "參考價格",
+    "taxIncluded": "（含稅）"
   }
 };

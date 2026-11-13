@@ -5,7 +5,7 @@ window.EZO_SITE_CONFIG = Object.freeze({
   defaultLocale: 'ja',
   locales: Object.freeze(['ja', 'en', 'zh']),
   languageCodes: Object.freeze({ja: 'ja', en: 'en', zh: 'zh-Hant'}),
-  updatedAt: '2026-10-25',
-  version: '20261025-3',
-  socialImage: 'assets/burl.jpg'
+  updatedAt: '2026-11-13',
+  version: '20261113-1',
+  socialImage: 'assets/pen.jpg'
 });

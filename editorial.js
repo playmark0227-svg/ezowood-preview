@@ -556,7 +556,7 @@ window.EZO_EDITORIAL = {
       {
         "category": "order",
         "q": "価格はいくらですか。",
-        "a": "販売価格はまだ決まっていません。税込で、ペン・箱・送料を含む価格を予定していますが、送料の対象範囲など最終条件は未確定です。販売開始前にご案内します。"
+        "a": "{price}（税込）を目安に準備しています。ペン・箱・送料を含む価格を予定していますが、送料の対象範囲など最終条件は未確定です。正式な価格は受付開始時にご案内します。"
       },
       {
         "category": "order",
@@ -635,7 +635,7 @@ window.EZO_EDITORIAL = {
       }
     ],
     "product": {
-      "statement": "北海道のコブ材を、日々の筆記具を通して知る。協力工房・職人と企画する最初の一本は、白樺瘤のノック式ボールペンです。現在は通常受付を停止しており、価格と次回発送月は未定です。",
+      "statement": "北海道のコブ材を、日々の筆記具を通して知る。協力工房・職人と企画する最初の一本は、白樺瘤のノック式ボールペンです。価格は{price}（税込）を目安に準備しています。次回の受付日程と発送月は、決まり次第ご案内します。",
       "features": [
         {
           "title": "白樺瘤という素材",
@@ -1245,7 +1245,7 @@ window.EZO_EDITORIAL = {
       {
         "category": "order",
         "q": "What is the price?",
-        "a": "The selling price has not yet been decided. We plan a tax-inclusive price covering the pen, box and delivery, but the final terms, including the destinations covered by delivery, are unconfirmed. We will announce them before launch."
+        "a": "We are preparing it at an estimated {price} (tax incl.). We plan a price covering the pen, box and delivery, but the final terms, including the destinations covered by delivery, are unconfirmed. The final price will be announced when reservations open."
       },
       {
         "category": "order",
@@ -1324,7 +1324,7 @@ window.EZO_EDITORIAL = {
       }
     ],
     "product": {
-      "statement": "Discover Hokkaido’s burl wood through an everyday writing instrument. The first pen we plan with partner workshops and craftspeople is a click-action birch burl ballpoint. Regular orders are currently closed; the price and next dispatch month are undecided.",
+      "statement": "Discover Hokkaido’s burl wood through an everyday writing instrument. The first pen we plan with partner workshops and craftspeople is a click-action birch burl ballpoint. We are preparing it at an estimated {price} (tax incl.). The next ordering period and dispatch month will be announced once they are set.",
       "features": [
         {
           "title": "The material: birch burl",
@@ -1934,7 +1934,7 @@ window.EZO_EDITORIAL = {
       {
         "category": "order",
         "q": "價格是多少？",
-        "a": "售價尚未確定。目前計畫採用含稅價格，幷包含筆、筆盒與運費，但適用運費範圍等最終條件未確定。開售前將另行公佈。"
+        "a": "目前以{price}（含稅）為參考價格籌備中。計畫採用包含筆、筆盒與運費的價格，但適用運費範圍等最終條件未確定。正式價格將於開放受理時公佈。"
       },
       {
         "category": "order",
@@ -2013,7 +2013,7 @@ window.EZO_EDITORIAL = {
       }
     ],
     "product": {
-      "statement": "透過日常書寫工具，認識北海道瘤木。與合作工坊、職人一起企劃的第一支筆，是白樺瘤木按壓式原子筆。目前暫停接單，價格與下次出貨月份未定。",
+      "statement": "透過日常書寫工具，認識北海道瘤木。與合作工坊、職人一起企劃的第一支筆，是白樺瘤木按壓式原子筆。目前以{price}（含稅）為參考價格籌備中。下次受理日程與出貨月份確定後將另行公佈。",
       "features": [
         {
           "title": "白樺瘤木這一材料",

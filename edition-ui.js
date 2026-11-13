@@ -5,7 +5,7 @@ window.EZO_UI = {
     "navJournal": "木のある日々",
     "navGift": "贈りもの",
     "navCare": "使い方と手入れ",
-    "navShop": "予約受付状況",
+    "navShop": "ペンを見る",
     "navHome": "ホーム",
     "materialLink": "白樺瘤を知る",
     "craftLink": "ものづくりへの想い",
@@ -45,7 +45,7 @@ window.EZO_UI = {
     ],
     "craftTitle": "削る手と、\n届ける私たち。",
     "craftBody": "実際の制作は協力工房・職人とのものづくりとして紹介していきます。私たちは素材や商品の企画、伝え方、使い手との接点を担う立場です。\nつくる人の名前や仕事の背景は、掲載の許諾と確認が整った内容からお伝えします。",
-    "craftNote": "協力工房の写真・紹介は準備中です。掲載図は実際の工房や制作記録を示すものではありません。",
+    "craftNote": "制作風景の画像はイメージです。実際の協力工房・職人を写したものではありません。",
     "processTitle": "素材とつくり手を、\n確かに紹介するために。",
     "processIntro": "ブランドが大切にする、四つの役割。",
     "process": [
@@ -132,7 +132,7 @@ window.EZO_UI = {
     "toc": "このページの内容",
     "nextStory": "木から、日々へ。",
     "relatedTitle": "つづく、木の物語。",
-    "aboutImage": "コブ材・風景の画像は参考イメージです。実物の素材・完成品・協力工房の写真は撮影準備中です。",
+    "aboutImage": "掲載している画像・映像はイメージです。実際の商品は、木目・色合い・瘤の表情が一本ずつ異なります。",
     "productStoryTitle": "この一本を、知る。",
     "productScenesTitle": "日々に、似合う一本。",
     "productOrderTitle": "発送枠ごとの予約販売について",
@@ -210,12 +210,77 @@ window.EZO_UI = {
     "photoReference": "参考イメージ",
     "mediaMaterial": "コブ材の参考イメージ",
     "mediaLandscape": "北海道の風景イメージ",
-    "mediaProduct": "完成品の実物写真を準備しています",
-    "mediaPartner": "協力工房の紹介写真を準備しています",
-    "mediaLife": "実物の使用シーンを準備しています",
-    "mediaPackaging": "実際のお届け内容の写真を準備しています",
+    "mediaProduct": "完成イメージ",
+    "mediaPartner": "制作風景のイメージ",
+    "mediaLife": "使用シーンのイメージ",
+    "mediaPackaging": "お届けイメージ",
     "photoStageTitle": "実物を、確かに伝えるために。",
-    "photoStageBody": "木材のペン生地・完成品・協力工房の手元を撮影し、掲載の許諾を確認した写真へ順次切り替えていきます。"
+    "photoStageBody": "木材のペン生地・完成品・協力工房の手元を撮影し、掲載の許諾を確認した写真へ順次切り替えていきます。",
+    "hEyebrow": "HOKKAIDO BIRCH BURL — BALLPOINT PEN",
+    "hTitle": "白樺のコブが描く、\n一本だけの木目。",
+    "hLead": "北海道産の白樺瘤を軸にした、ノック式ボールペン。\n同じ模様は、ふたつとありません。",
+    "hStatus": "次回受付 準備中",
+    "hPrimary": "このペンを詳しく見る",
+    "hSecondary": "木目の魅力を知る",
+    "hImageChip": "完成イメージ",
+    "hFacts": [
+      [
+        "北海道産の白樺瘤",
+        "幹に現れるコブが描く、\n複雑で奥行きのある木目。"
+      ],
+      [
+        "世界に一本",
+        "木目・色合い・瘤の表情は\n一本ずつ異なります。"
+      ],
+      [
+        "ノック式",
+        "キャップを外さずに、\n思い立ったらすぐ書ける。"
+      ],
+      [
+        "箱付きでお届け",
+        "贈りものにもそのまま。\n（予定・包装は準備中）"
+      ]
+    ],
+    "hGrainTitle": "同じ木目は、\nふたつとない。",
+    "hLifePoints": [
+      "ノック式で、思い立ったらすぐ書ける",
+      "手にするたび、木目が目に入る",
+      "机に置いても、眺めて楽しい"
+    ],
+    "hStoryEyebrow": "FROM THE FOREST TO YOUR HAND",
+    "hStoryTitle": "北海道の森から、\nあなたの手元へ。",
+    "hStorySteps": [
+      [
+        "北海道の森",
+        "白樺が育つ北の森。ブランドの出発点は、この土地の木です。"
+      ],
+      [
+        "白樺の瘤",
+        "幹に現れるコブが、複雑な線と濃淡を描く。その表情を木軸に生かします。"
+      ],
+      [
+        "協力工房のものづくり",
+        "軸への仕立ては、協力工房・職人とともに進めています。"
+      ]
+    ],
+    "hFilmChip": "イメージ映像",
+    "hGiftPoints": [
+      "箱付きでのお届けを予定",
+      "北海道からの贈りものに",
+      "名入れ・包装は準備中"
+    ],
+    "hBuyEyebrow": "HOW TO ORDER",
+    "hBuyTitle": "お迎えまでの流れ。",
+    "hBuyIntro": "発送月ごとに受付期間を区切る、受注予約制でお届けする予定です。次回の受付日程は、決まり次第このサイトでお知らせします。",
+    "hFinalTitle": "はじめの一本を、\n見にいく。",
+    "hFinalBody": "木目のこと、仕様のこと、お届けのこと。購入前に知っておきたいことを、商品ページにまとめています。",
+    "hSticky": "詳しく見る",
+    "hGallery": [
+      "完成イメージ",
+      "使用シーン",
+      "お届けイメージ",
+      "白樺瘤の木目"
+    ]
   },
   "en": {
     "navMaterials": "Hokkaido wood",
@@ -223,7 +288,7 @@ window.EZO_UI = {
     "navJournal": "Journal",
     "navGift": "Gifting",
     "navCare": "Use & care",
-    "navShop": "Release status",
+    "navShop": "View the pen",
     "navHome": "Home",
     "materialLink": "Discover birch burl",
     "craftLink": "Our approach to making",
@@ -263,7 +328,7 @@ window.EZO_UI = {
     ],
     "craftTitle": "The hands that make.\nOur role in connecting.",
     "craftBody": "Production will be introduced as collaboration with partner workshops and craftspeople. Our role is material and product planning, communication, and connection with users.\nMaker names and stories will be shared when information and publication permission are confirmed.",
-    "craftNote": "Partner-workshop photography and profiles are in preparation. The illustrations are not records of an actual workshop or production.",
+    "craftNote": "Workshop images are illustrative and do not show our actual partner workshops or craftspeople.",
     "processTitle": "Share materials and makers\nwith care.",
     "processIntro": "Four roles we want the brand to fulfil.",
     "process": [
@@ -350,7 +415,7 @@ window.EZO_UI = {
     "toc": "On this page",
     "nextStory": "From wood, into daily life.",
     "relatedTitle": "Follow the story of wood.",
-    "aboutImage": "Burl and landscape images are references. Actual material, product, and partner-workshop photography is being prepared.",
+    "aboutImage": "Images and film on this site are illustrative. Each actual pen differs in grain, colour and burl figure.",
     "productStoryTitle": "Get to know this pen.",
     "productScenesTitle": "A place in daily life.",
     "productOrderTitle": "Scheduled made-to-order releases",
@@ -428,12 +493,77 @@ window.EZO_UI = {
     "photoReference": "Reference image",
     "mediaMaterial": "Burl reference image",
     "mediaLandscape": "An impression of Hokkaido scenery",
-    "mediaProduct": "Actual product photography in preparation",
-    "mediaPartner": "Partner-workshop photography in preparation",
-    "mediaLife": "Actual usage photography in preparation",
-    "mediaPackaging": "Actual packaging photography in preparation",
+    "mediaProduct": "Concept image",
+    "mediaPartner": "Illustrative workshop scene",
+    "mediaLife": "Illustrative use scene",
+    "mediaPackaging": "Illustrative packaging",
     "photoStageTitle": "Document the actual object.",
-    "photoStageBody": "We will photograph pen blanks, completed pens, and partner-workshop handwork, and replace references with photographs approved for publication."
+    "photoStageBody": "We will photograph pen blanks, completed pens, and partner-workshop handwork, and replace references with photographs approved for publication.",
+    "hEyebrow": "HOKKAIDO BIRCH BURL — BALLPOINT PEN",
+    "hTitle": "A grain no other\npen will ever share.",
+    "hLead": "A retractable ballpoint pen with a barrel of Hokkaido birch burl.\nNo two grain patterns are ever the same.",
+    "hStatus": "Next release in preparation",
+    "hPrimary": "See the pen in detail",
+    "hSecondary": "Discover the grain",
+    "hImageChip": "Concept image",
+    "hFacts": [
+      [
+        "Hokkaido birch burl",
+        "Intricate, deep grain\nformed by burls on the trunk."
+      ],
+      [
+        "One of a kind",
+        "Grain, colour and burl figure\ndiffer in every pen."
+      ],
+      [
+        "Retractable",
+        "No cap to remove —\nwrite the moment an idea comes."
+      ],
+      [
+        "Arrives boxed",
+        "Ready to give as a gift.\n(Planned; wrapping in preparation)"
+      ]
+    ],
+    "hGrainTitle": "No two grains\nare alike.",
+    "hLifePoints": [
+      "Retractable, ready the moment you need it",
+      "The grain catches your eye each time you pick it up",
+      "A pleasure to look at, even resting on your desk"
+    ],
+    "hStoryEyebrow": "FROM THE FOREST TO YOUR HAND",
+    "hStoryTitle": "From a Hokkaido forest\nto your hand.",
+    "hStorySteps": [
+      [
+        "Hokkaido forests",
+        "Northern forests where birch grows. Our starting point is the wood of this land."
+      ],
+      [
+        "Birch burl",
+        "Burls on the trunk draw intricate lines and contrasts, which we bring to the barrel."
+      ],
+      [
+        "Made with partner workshops",
+        "Turning the wood into a pen is done together with partner workshops and craftspeople."
+      ]
+    ],
+    "hFilmChip": "Concept film",
+    "hGiftPoints": [
+      "Planned to arrive in a box",
+      "A gift from Hokkaido",
+      "Engraving and wrapping in preparation"
+    ],
+    "hBuyEyebrow": "HOW TO ORDER",
+    "hBuyTitle": "How to get yours.",
+    "hBuyIntro": "We plan to sell by reservation, with an ordering period for each shipping month. The next schedule will be announced on this site as soon as it is set.",
+    "hFinalTitle": "Meet the first pen.",
+    "hFinalBody": "Grain, specifications and delivery: everything to know before you buy is on the product page.",
+    "hSticky": "Details",
+    "hGallery": [
+      "Concept image",
+      "In use",
+      "Packaging",
+      "Birch burl grain"
+    ]
   },
   "zh": {
     "navMaterials": "北海道的木",
@@ -441,7 +571,7 @@ window.EZO_UI = {
     "navJournal": "與木的日常",
     "navGift": "贈禮",
     "navCare": "使用與保養",
-    "navShop": "預約開放狀態",
+    "navShop": "看這支筆",
     "navHome": "首頁",
     "materialLink": "認識白樺瘤木",
     "craftLink": "關於製作的心意",
@@ -481,7 +611,7 @@ window.EZO_UI = {
     ],
     "craftTitle": "製作的雙手，\n與負責傳達的我們。",
     "craftBody": "實際製作將以合作工房與工藝師的協作方式介紹。我們負責材料與商品企劃、資訊傳達，以及與使用者的連結。\n工藝師姓名與工作背景，將在資料及公開授權確認後逐步分享。",
-    "craftNote": "合作工房照片與介紹籌備中，示意圖並非實際工房或製作過程的紀錄。",
+    "craftNote": "製作情景圖片為示意，並非實際合作工房或職人的照片。",
     "processTitle": "用心介紹，\n材料與製作者。",
     "processIntro": "品牌希望珍惜的四個角色。",
     "process": [
@@ -568,7 +698,7 @@ window.EZO_UI = {
     "toc": "本頁內容",
     "nextStory": "從木材，走進日常。",
     "relatedTitle": "木的故事，還在繼續。",
-    "aboutImage": "瘤木及風景圖片為參考意象，實際材料、完成品與合作工房照片正在籌備拍攝。",
+    "aboutImage": "本網站的圖片與影片皆為示意。實際商品的木紋、色澤與瘤的樣貌，每一支都不同。",
     "productStoryTitle": "認識這一支筆。",
     "productScenesTitle": "適合日常的一支。",
     "productOrderTitle": "依出貨批次接單預約",
@@ -646,11 +776,76 @@ window.EZO_UI = {
     "photoReference": "參考意象",
     "mediaMaterial": "瘤木參考意象",
     "mediaLandscape": "北海道風景意象",
-    "mediaProduct": "完成品實物照片籌備中",
-    "mediaPartner": "合作工房介紹照片籌備中",
-    "mediaLife": "實物使用情境照片籌備中",
-    "mediaPackaging": "實際包裝照片籌備中",
+    "mediaProduct": "完成示意圖",
+    "mediaPartner": "製作情景示意",
+    "mediaLife": "使用情境示意",
+    "mediaPackaging": "包裝示意",
     "photoStageTitle": "用實物，清楚傳達。",
-    "photoStageBody": "我們將拍攝筆身木胚、完成品與合作工房的手作過程，確認公開授權後逐步替換參考圖。"
+    "photoStageBody": "我們將拍攝筆身木胚、完成品與合作工房的手作過程，確認公開授權後逐步替換參考圖。",
+    "hEyebrow": "HOKKAIDO BIRCH BURL — BALLPOINT PEN",
+    "hTitle": "白樺瘤描繪的，\n獨一無二的木紋。",
+    "hLead": "以北海道產白樺瘤為筆桿的按壓式原子筆。\n世上沒有兩支相同的紋路。",
+    "hStatus": "下次受理 準備中",
+    "hPrimary": "查看這支筆的詳情",
+    "hSecondary": "認識木紋之美",
+    "hImageChip": "完成示意圖",
+    "hFacts": [
+      [
+        "北海道產白樺瘤",
+        "樹幹上的瘤所描繪出\n複雜而有深度的木紋。"
+      ],
+      [
+        "獨一無二",
+        "木紋、色澤與瘤的樣貌\n每一支都不同。"
+      ],
+      [
+        "按壓式",
+        "無需取下筆蓋，\n想到就能立刻書寫。"
+      ],
+      [
+        "附盒寄送",
+        "也適合直接作為禮物。\n（預定，包裝籌備中）"
+      ]
+    ],
+    "hGrainTitle": "沒有兩支\n相同的木紋。",
+    "hLifePoints": [
+      "按壓式，想寫就能立刻書寫",
+      "每次拿起，木紋都映入眼簾",
+      "放在桌上，也賞心悅目"
+    ],
+    "hStoryEyebrow": "FROM THE FOREST TO YOUR HAND",
+    "hStoryTitle": "從北海道的森林，\n到你的手中。",
+    "hStorySteps": [
+      [
+        "北海道的森林",
+        "白樺生長的北方森林。品牌的起點，就是這片土地的木頭。"
+      ],
+      [
+        "白樺瘤",
+        "樹幹上的瘤描繪出複雜的線條與濃淡，我們將這份表情運用於筆桿。"
+      ],
+      [
+        "與合作工房一同製作",
+        "從木材到筆桿，由合作工房與職人一同完成。"
+      ]
+    ],
+    "hFilmChip": "示意影片",
+    "hGiftPoints": [
+      "預定附盒寄送",
+      "來自北海道的禮物",
+      "刻名與包裝籌備中"
+    ],
+    "hBuyEyebrow": "HOW TO ORDER",
+    "hBuyTitle": "迎接這支筆的流程。",
+    "hBuyIntro": "預計採用依出貨月份區分受理期間的預約制。下次受理日程確定後，將於本網站公告。",
+    "hFinalTitle": "去看看\n第一支筆。",
+    "hFinalBody": "關於木紋、規格與寄送，購買前想知道的資訊都整理在商品頁。",
+    "hSticky": "查看詳情",
+    "hGallery": [
+      "完成示意圖",
+      "使用情境",
+      "包裝示意",
+      "白樺瘤木紋"
+    ]
   }
 };

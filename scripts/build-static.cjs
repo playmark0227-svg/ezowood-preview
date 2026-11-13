@@ -40,7 +40,7 @@ const labels = {
 const absolute = value => new URL(value, config.origin).href;
 const local = file => `${routes.basePath}${file}`;
 const versioned = file => `${local(file)}?v=${encodeURIComponent(config.version)}`;
-const styleFiles = ['styles.css', 'edition.css', 'launch.css'];
+const styleFiles = ['styles.css', 'edition.css', 'launch.css', 'design.css'];
 const scriptFiles = ['site-config.js', 'copy.js', 'edition-ui.js', 'editorial.js', 'edition-renderers.js', 'media.js', 'releases.js', 'routing.js', 'app.js'];
 const missingDependencies = [...styleFiles, ...scriptFiles].filter(file => !fs.existsSync(path.join(ROOT, file)));
 
@@ -68,7 +68,7 @@ function pageData(page) {
   }
   title = plain(title);
   description = plain(description);
-  if (!description.includes(labels[locale].reference)) description += ' ' + labels[locale].reference;
+  // The illustrative-image notice is shown on every page and on each image; keep search and share snippets about the pen itself.
   return {title: pathname || article ? `${title} | ${config.brandName}` : title, shortTitle:title, description};
 }
 
@@ -106,7 +106,7 @@ function metadata(page, data, crumbs, renderedMain) {
     for (const locale of config.locales) result.push(`  <link rel="alternate" hreflang="${esc(config.languageCodes[locale])}" href="${esc(absolute(routes.url(page.pathname, locale, page.params)))}">`);
     result.push(`  <link rel="alternate" hreflang="x-default" href="${esc(absolute(routes.url(page.pathname, config.defaultLocale, page.params)))}">`);
   }
-  result.push(`  <meta property="og:type" content="${page.article ? 'article' : 'website'}">`, `  <meta property="og:site_name" content="${esc(config.brandName)}">`, `  <meta property="og:title" content="${esc(data.title)}">`, `  <meta property="og:description" content="${esc(data.description)}">`, `  <meta property="og:url" content="${esc(pageURL)}">`, `  <meta property="og:image" content="${esc(imageURL)}">`, `  <meta property="og:image:alt" content="${esc(labels[page.locale].reference)}">`, `  <meta name="twitter:card" content="summary_large_image">`, `  <script type="application/ld+json">${json({'@context':'https://schema.org', '@graph':graph})}</script>`);
+  result.push(`  <meta property="og:type" content="${page.article ? 'article' : 'website'}">`, `  <meta property="og:site_name" content="${esc(config.brandName)}">`, `  <meta property="og:title" content="${esc(data.title)}">`, `  <meta property="og:description" content="${esc(data.description)}">`, `  <meta property="og:url" content="${esc(pageURL)}">`, `  <meta property="og:image" content="${esc(imageURL)}">`, `  <meta property="og:image:alt" content="${esc(`${copy(page.locale, 'productName')} — ${ui(page.locale, 'mediaProduct')}`)}">`, `  <meta name="twitter:card" content="summary_large_image">`, `  <script type="application/ld+json">${json({'@context':'https://schema.org', '@graph':graph})}</script>`);
   return result.join('\n');
 }
 
