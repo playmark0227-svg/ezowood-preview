@@ -32,7 +32,7 @@ window.EZO_RENDERERS = function ({t,u,editorial,esc,routeLink,image,eyebrow,arro
     return `<section class="hm-hero" data-hero aria-labelledby="hero-title">
       <div class="hm-hero-media" data-film-frame><video class="hm-hero-video" data-film="hero" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.webp" width="1280" height="720" aria-label="${esc(u('filmLabel'))}"><source src="assets/hero-film-480.mp4" type="video/mp4" media="(max-width: 900px)"><source src="assets/hero-film-720.mp4" type="video/mp4"></video><span class="shot-chip">${esc(u('hFilmChip'))}</span><button class="hm-film-toggle" type="button" data-film-toggle aria-label="${esc(u('filmAction'))}" aria-pressed="true"><span aria-hidden="true"></span></button></div>
       <div class="hm-hero-copy">${kicker(u('hEyebrow'))}<h1 id="hero-title" class="hm-hero-title preline">${esc(u('hTitle'))}</h1><p class="hm-hero-lead preline">${esc(u('hLead'))}</p></div>
-      <div class="hm-hero-buy">${priceBlock('hm-price')}${statusPill()}<div class="hm-actions">${routeLink('product',u('hPrimary'),'button button-primary')}<a class="hm-secondary" href="#grain">${esc(u('hSecondary'))}</a></div></div>
+      <div class="hm-hero-buy">${statusPill()}<div class="hm-actions">${routeLink('product',u('hPrimary'),'button button-primary')}<a class="hm-secondary" href="#grain">${esc(u('hSecondary'))}</a></div></div>
     </section>
     <section class="hm-facts" aria-label="${esc(t('productName'))}"><ul class="container">${u('hFacts').map(([name,text],i)=>`<li><span class="hm-no">0${i+1}</span><h2>${esc(name)}</h2><p class="preline">${esc(text)}</p></li>`).join('')}</ul></section>
     <section class="hm-grain" id="grain"><div class="container hm-grain-layout">
