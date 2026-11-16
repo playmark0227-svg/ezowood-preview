@@ -289,3 +289,33 @@ html[lang=en] .hm-body,html[lang=en] .hm-hero-lead{letter-spacing:0;line-height:
 .editorial-cover{position:relative}
 .editorial-cover .shot-chip{left:auto;right:16px;bottom:16px}
 @media(max-width:760px){.hm-hero{padding-top:88px}}
+
+/* ---------- Editorial page lead: larger introduction under the page title ---------- */
+.editorial-lead{font-size:clamp(19px,1.6vw,23px);line-height:2.05;letter-spacing:.05em;color:var(--ink);max-width:880px}
+@media(max-width:760px){.editorial-lead{font-size:17px;line-height:2}}
+
+/* ---------- Larger reading sizes across the site ---------- */
+.body-copy,.hm-body{font-size:17.5px}
+.chapter-prose .body-copy,.article-body .body-copy,.guide-section .body-copy{font-size:18.5px}
+.small-copy,.hm-note{font-size:13.5px}
+.section-title,.hm-title{font-size:clamp(30px,3.3vw,46px)}
+.hm-facts p,.hm-steps p,.hm-buy-steps p,.product-points span{font-size:14.5px}
+.hm-facts h2,.hm-steps h3,.hm-buy-steps h3{font-size:20px}
+.hm-checks li,.faq-item summary{font-size:17px}
+.faq-answer{font-size:16px}
+.article-card>p{font-size:15.5px}.article-card h3{font-size:23px}
+.hm-hero-lead{font-size:clamp(16px,1.25vw,19px)}
+.header-nav{font-size:15.5px}
+.text-link{font-size:15px}.button{font-size:16px}
+.eyebrow,.hm-kicker{font-size:12px}
+@media(max-width:760px){
+  .body-copy,.hm-body{font-size:16px}
+  .chapter-prose .body-copy,.article-body .body-copy,.guide-section .body-copy{font-size:16.5px}
+  .small-copy,.hm-note{font-size:12.5px}
+  .section-title,.hm-title{font-size:27px}
+  .hm-facts p,.hm-steps p,.hm-buy-steps p{font-size:13.5px}
+  .hm-facts h2{font-size:17px}
+  .hm-checks li,.faq-item summary{font-size:15.5px}
+  .faq-answer{font-size:15px}
+  .hm-hero-lead{font-size:15px}
+}
